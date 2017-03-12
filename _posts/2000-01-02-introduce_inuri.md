@@ -2,7 +2,7 @@
 title: "아이누리 소개"
 bg: purple
 color: white
-fa-icon: cloud-upload
+fa-icon: heart-o
 style: center
 ---
 
