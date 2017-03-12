@@ -9,7 +9,14 @@ $.extend($.easing,
         return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
     }
 });
-
+<head>
+<!– 전화걸기 스크립트 –>
+<script type=”text/javascript”>
+function callNumber(num){
+location.href=”tel:”+num;
+}
+</script>
+</head>
 (function( $ ) {
 
     var settings;
@@ -92,4 +99,3 @@ $(document).ready(function (){
 	});
 
 });
-
