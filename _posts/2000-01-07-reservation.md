@@ -44,11 +44,16 @@ KB국민은행과 카페베네 건물이 보입니다.
 **네비게이션에 '약수역 9번출구'로**
 
 **검색해 주세요.**
-
----
-
+<html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="../../docs/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../../docs/js/examples-base.js"></script>
+    <script type="text/javascript" src="../../docs/js/highlight.min.js"></script>
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=IbVoT9BuB32w355RieYf&amp;submodules=panorama"></script>
+    <link rel="stylesheet" type="text/css" href="../../docs/css/examples-base.css" />
 </head>
 <body>
 <!-- @category Map -->
@@ -61,13 +66,20 @@ KB국민은행과 카페베네 건물이 보입니다.
 var mapDiv = document.getElementById('map'); // 'map' 으로 선언해도 동일
 //옵션 없이 지도 객체를 생성하면 서울시청을 중심으로 하는 11레벨의 지도가 생성됩니다.
 var map = new naver.maps.Map(mapDiv);
+
 var map = new naver.maps.Map('map', {
-    center: new naver.maps.LatLng(37.5546007, 127.0101956),
-    zoom: 15
-});
+       scaleControl: false,
+       logoControl: false,
+       mapDataControl: false,
+       zoomControl: true,
+       minZoom: 1,
+       center: new naver.maps.LatLng(37.5546007, 127.0101956),
+       zoom: 15
+   });
 var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.5546007, 127.0101956),
     map: map
 });
 </script>
 </body>
+</html>
