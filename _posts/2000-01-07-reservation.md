@@ -1,23 +1,73 @@
 ---
-title: "video"
+title: "오시는 길"
 bg: turquoise
 color: white
-fa-icon: film
+fa-icon: map-marker
+style: center
+---
+## 오시는 길
+
+#### 지하철
+지하철 3호선 / 6호선
+
+약수역 9번 출구
+
+약수역 사거리 카페베네 건물 5층
+
 ---
 
-Having an **embedded media** (photos and video) is often inflexible with a dynamic and **responsive design**.
+#### 버스
 
-### Embed your video like this:
-{: .left}
+지선: 142, 144, 407번
 
-{% highlight html linenos=table %}
-<div class="icontain">
-  <iframe src="//www.youtube.com/embed/8yis7GzlXNM" allowfullscreen></iframe>
+간선: 6211, 7212번
+
+---
+
+#### 자동차
+금호터널 방향에서 오실때
+
+약수역 사거리에서 좌회전하면
+
+KB국민은행과 카페베네 건물이 보입니다.
+<br/>
+
+<br/>
+두건물을 사이에 끼고 우회전하셔서
+
+10m 직진하시면
+
+우측에 유료주차장이 있습니다.
+
+(주차 1시간 무료)
+
+**네비게이션에 '약수역 9번출구'로**
+
+**검색해 주세요.**
+
+---
+
+<head>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=IbVoT9BuB32w355RieYf&amp;submodules=panorama"></script>
+</head>
+<body>
+<!-- @category Map -->
+<div id="wrap" class="section">
+    <div id="map" style="width:100%;height:300px;"></div>
+    <code id="snippet" class="snippet"></code>
 </div>
-{% endhighlight %}
-
-It'll play like this funny video below! Try resizing the page!
-
-Photo layouts are also really cool and dynamically resizable. Check out the photos/gallery section at [magiciansanfrancisco.com](http://magiciansanfrancisco.com) for a demo and see [the source code](https://github.com/strongrobert/MagicianSanFrancisco) for how.
-
-<div class="icontain"><iframe src="//www.youtube.com/embed/8yis7GzlXNM" allowfullscreen></iframe></div>
+<script id="code">
+//지도를 삽입할 HTML 엘리먼트 또는 HTML 엘리먼트의 id를 지정합니다.
+var mapDiv = document.getElementById('map'); // 'map' 으로 선언해도 동일
+//옵션 없이 지도 객체를 생성하면 서울시청을 중심으로 하는 11레벨의 지도가 생성됩니다.
+var map = new naver.maps.Map(mapDiv);
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.5546007, 127.0101956),
+    zoom: 15
+});
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.5546007, 127.0101956),
+    map: map
+});
+</script>
+</body>

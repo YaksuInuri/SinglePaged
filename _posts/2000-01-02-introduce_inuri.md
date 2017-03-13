@@ -5,9 +5,6 @@ color: white
 fa-icon: heart-o
 style: center
 ---
-
-![교통사고 치료](../img/intro1.jpg)
-
 따뜻한 마음으로
 
 체계적인 시스템을 통한
@@ -22,8 +19,12 @@ style: center
 
 세상에서 가장 따뜻한 마음을 느껴보세요.
 
-![한방자동차보험](../img/intro5.jpg)
-![한방자동차보험](../img/intro2.jpg)
 ![교통사고 후유증](../img/intro3.jpg)
-![교통사고 치료](../img/intro4.jpg)
+![한방자동차보험](../img/intro5.jpg)
+
+<br/>
+
+<br/>
+
+
 ![비염](../img/intro6.png)
